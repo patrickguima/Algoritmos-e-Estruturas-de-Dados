@@ -39,17 +39,17 @@ Modulus:
 Exponent: 65537 (0x10001)  
 
 4. achando N e E com pycripto atraves da chave publica:  
-n = 121777572379477881104673582957939363684328143143792749232831097344875246353197897262670894989001771099
+n = 121777572379477881104673582957939363684328143143792749232831097344875246353197897262670894989001771099  
 e = 65537
 
 5. Tendo o n pode se gerar p e q utilizando o cado-nfs(quebra levou quase 2 horas):  
-p = 370623168012529019441711176414335203038316469257573
-q = 328575175244741193151661160321630376150831280528063
+p = 370623168012529019441711176414335203038316469257573  
+q = 328575175244741193151661160321630376150831280528063  
 
 6. Script pra gerar private key utilizando p,q,e (arquivo cod.py contido na pasta):
 
 7. Descriptografando cipher_pass.enc com a chave privada:  
-`openssl rsautl -decrypt -in cipher_pass.enc -out senha.txt -inkey privada.txt`  
+`openssl rsautl -decrypt -in cipher_pass.enc -out senha.txt -inkey privada.txt`    
 senha encontrada = o4M2qyDM6d
 
 8. Descriptografando cipher_text.esc:  
