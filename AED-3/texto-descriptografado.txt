@@ -1,0 +1,29 @@
+Decrypting an iPhone for the FBI
+by Bruce Schneier
+February 22, 2016
+
+Earlier this week, a federal magistrate ordered Apple to assist the FBI in hacking into the iPhone used by one of the San Bernardino shooters. Apple will fight this order in court.
+
+The policy implications are complicated. The FBI wants to set a precedent that tech companies will assist law enforcement in breaking their users' security, and the technology community is afraid that the precedent will limit what sorts of security features it can offer customers. The FBI sees this as a privacy vs. security debate, while the tech community sees it as a security vs. surveillance debate.
+
+The technology considerations are more straightforward, and shine a light on the policy questions.
+
+The iPhone 5c in question is encrypted. This means that someone without the key cannot get at the data. This is a good security feature. Your phone is a very intimate device. It is likely that you use it for private text conversations, and that it's connected to your bank accounts. Location data reveals where you've been, and correlating multiple phones reveals who you associate with. Encryption protects your phone if it's stolen by criminals. Encryption protects the phones of dissidents around the world if they're taken by local police. It protects all the data on your phone, and the apps that increasingly control the world around you.
+
+This encryption depends on the user choosing a secure password, of course. If you had an older iPhone, you probably just used the default four-digit password. That's only 10,000 possible passwords, making it pretty easy to guess. If the user enabled the more-secure alphanumeric password, that means a harder-to-guess password.
+
+Apple added two more security features on the iPhone. First, a phone could be configured to erase the data after too many incorrect password guesses. And it enforced a delay between password guesses. This delay isn't really noticeable by the user if you type the wrong password and then have to retype the correct password, but it's a large barrier for anyone trying to guess password after password in a brute-force attempt to break into the phone.
+
+But that iPhone has a security flaw. While the data is encrypted, the software controlling the phone is not. This means that someone can create a hacked version of the software and install it on the phone without the consent of the phone's owner and without knowing the encryption key. This is what the FBI ­ and now the court ­ is demanding Apple do: It wants Apple to rewrite the phone's software to make it possible to guess possible passwords quickly and automatically.
+
+The FBI's demands are specific to one phone, which might make its request seem reasonable if you don't consider the technological implications: Authorities have the phone in their lawful possession, and they only need help seeing what's on it in case it can tell them something about how the San Bernardino shooters operated. But the hacked software the court and the FBI wants Apple to provide would be general. It would work on any phone of the same model. It has to.
+
+Make no mistake; this is what a backdoor looks like. This is an existing vulnerability in iPhone security that could be exploited by anyone.
+
+There's nothing preventing the FBI from writing that hacked software itself, aside from budget and manpower issues. There's every reason to believe, in fact, that such hacked software has been written by intelligence organizations around the world. Have the Chinese, for instance, written a hacked Apple operating system that records conversations and automatically forwards them to police? They would need to have stolen Apple's code-signing key so that the phone would recognize the hacked as valid, but governments have done that in the past with other keys and other companies. We simply have no idea who already has this capability.
+
+And while this sort of attack might be limited to state actors today, remember that attacks always get easier. Technology broadly spreads capabilities, and what was hard yesterday becomes easy tomorrow. Today's top-secret NSA programs become tomorrow's PhD theses and the next day's hacker tools. Soon this flaw will be exploitable by cybercriminals to steal your financial data. Everyone with an iPhone is at risk, regardless of what the FBI demands Apple do
+
+What the FBI wants to do would make us less secure, even though it's in the name of keeping us safe from harm. Powerful governments, democratic and totalitarian alike, want access to user data for both law enforcement and social control. We cannot build a backdoor that only works for a particular type of government, or only in the presence of a particular court order.
+
+Either everyone gets security or no one does. Either everyone gets access or no one does. The current case is about a single iPhone 5c, but the precedent it sets will apply to all smartphones, computers, cars and everything the Internet of Things promises. The danger is that the court's demands will pave the way to the FBI forcing Apple and others to reduce the security levels of their smart phones and computers, as well as the security of cars, medical devices, homes, and everything else that will soon be computerized. The FBI may be targeting the iPhone of the San Bernardino shooter, but its actions imperil us all.
