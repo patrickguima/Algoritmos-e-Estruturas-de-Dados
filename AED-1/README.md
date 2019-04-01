@@ -1,8 +1,7 @@
 # Algoritimos-e-Estruturas-de-Dados
-Repositório contendo trabalhos de 3 semestres de AED
 
 
-Algoritimos implementados  
+Algoritmos implementados  
 1. Bubble Sort.  
 2. Insertion Sort.  
 3. Selection Sort.  
