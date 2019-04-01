@@ -27,16 +27,16 @@ Um de nossos analistas de TI obteve a hash da CHAVE2 em um servidor e gentilment
 2. Descriptografando o cipher_pub.enc:  
 `openssl enc -d -aes-256-cbc -nosalt -nopad -a -in cipher_pub.enc -out publica.txt -k zdb4Kp8`
 
-3. Comando pra descobrir a chave public: 
+3. Comando pra descobrir a chave public:   
 `openssl rsa -inform PEM -text -noout -pubin -in publica.txt`  
 
-**chave publica** 
-Public-Key: (336 bit)
-Modulus:
-    00:de:b4:51:6f:ec:aa:4e:04:ec:a1:cc:7d:b9:31:
-    b9:27:5d:82:78:75:8d:49:27:65:07:9d:c8:f3:f7:
-    72:1b:5e:8d:6a:d4:34:4e:be:c9:02:48:5b
-Exponent: 65537 (0x10001)
+**chave publica**    
+Public-Key: (336 bit)  
+Modulus:  
+    00:de:b4:51:6f:ec:aa:4e:04:ec:a1:cc:7d:b9:31:  
+    b9:27:5d:82:78:75:8d:49:27:65:07:9d:c8:f3:f7:  
+    72:1b:5e:8d:6a:d4:34:4e:be:c9:02:48:5b  
+Exponent: 65537 (0x10001)  
 
 4. achando N e E com pycripto atraves da chave publica:  
 n = 121777572379477881104673582957939363684328143143792749232831097344875246353197897262670894989001771099
