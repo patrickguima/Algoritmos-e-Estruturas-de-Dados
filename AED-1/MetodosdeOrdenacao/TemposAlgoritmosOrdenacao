@@ -1,0 +1,14 @@
+Bubble Sort:
+Aleatório - 0.005891
+Pior Caso - 0.004026
+Melhor Caso - 0.004207
+
+Insertion Sort:
+Aleatório - 0.001858
+Pior Caso -
+Melhor Caso -
+
+Selection Sort:
+Aleatório - 0.002582
+Pior Caso - 0.000012
+Melhor Caso -0.000012
