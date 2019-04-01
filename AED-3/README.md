@@ -1,6 +1,6 @@
 # Algoritimos-e-Estruturas-de-Dados
 
-###Descriçaõ do trabalho###   
+### Descriçaõ do trabalho ###   
 Um importante texto contendo ideias liberais perigosas foi encontrado, porém (supresa!) criptografado. Sua tarefa como criptoanalista do governo é encontrar o texto original, fornecer seu conteúdo e sua opinião pessoal sobre o tema tratado. Seu predecessor fez alguns avanços antes de desaparecer misteriosamente e abaixo estão suas anotações que esperamos poder ajudá-lo. Precisamos que vários criptoanalistas quebrem de forma independente para garantir que o texto recuperado está correto. Como incentivo, vocês receberão bônus no salário em ordem de solução: o primeiro criptoanalista a quebrar o código receberá o maior bônus, seguido do segundo e assim por diante. Precisamos destes resultados impreterivelmente até o dia 1o de agosto de 2018, ao meio-dia.
 
 --- anotações recuperadas do diário de trabalho do Criptoanalista #42 ---
