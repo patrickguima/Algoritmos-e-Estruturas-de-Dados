@@ -22,15 +22,15 @@ Um de nossos analistas de TI obteve a hash da CHAVE2 em um servidor e gentilment
 
 ### Como realizar a descriptografia do texto ###  
 
-1. A hash foi convertida pra hex e foi utlizado o hashcat modo sha256 com força bruta pra quebrar,levou cerca de 7 horas. Hash = zdb4Kp8
+1. A hash foi convertida pra hex e foi utlizado o hashcat modo sha256 com força bruta pra quebrar,levou cerca de 7 horas. Hash = zdb4Kp8  
 
-2. Descriptografando o cipher_pub.enc:
+2. Descriptografando o cipher_pub.enc:  
 `openssl enc -d -aes-256-cbc -nosalt -nopad -a -in cipher_pub.enc -out publica.txt -k zdb4Kp8`
 
 3. Comando pra descobrir a chave public: 
-openssl rsa -inform PEM -text -noout -pubin -in publica.txt
+`openssl rsa -inform PEM -text -noout -pubin -in publica.txt`  
 
-## chave publica ##
+**chave publica** 
 Public-Key: (336 bit)
 Modulus:
     00:de:b4:51:6f:ec:aa:4e:04:ec:a1:cc:7d:b9:31:
@@ -38,21 +38,21 @@ Modulus:
     72:1b:5e:8d:6a:d4:34:4e:be:c9:02:48:5b
 Exponent: 65537 (0x10001)
 
-4. achando N e E com pycripto atraves da chave publica:
+4. achando N e E com pycripto atraves da chave publica:  
 n = 121777572379477881104673582957939363684328143143792749232831097344875246353197897262670894989001771099
 e = 65537
 
-5. Tendo o n pode se gerar p e q utilizando o cado-nfs(quebra levou quase 2 horas):
+5. Tendo o n pode se gerar p e q utilizando o cado-nfs(quebra levou quase 2 horas):  
 p = 370623168012529019441711176414335203038316469257573
 q = 328575175244741193151661160321630376150831280528063
 
 6. Script pra gerar private key utilizando p,q,e (arquivo cod.py contido na pasta):
 
-7. Descriptografando cipher_pass.enc com a chave privada:
+7. Descriptografando cipher_pass.enc com a chave privada:  
 `openssl rsautl -decrypt -in cipher_pass.enc -out senha.txt -inkey privada.txt`  
 senha encontrada = o4M2qyDM6d
 
-8. Descriptografando cipher_text.esc:
+8. Descriptografando cipher_text.esc:  
 `openssl aes-256-cbc -d -md MD5 -a -in cipher_text.enc -out descriptografado.txt -k o4M2qyDM6d -nopad -nosalt`
 
 
